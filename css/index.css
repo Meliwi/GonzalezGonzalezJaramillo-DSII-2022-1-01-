@@ -1,3 +1,4 @@
+@import "./header.css";
 @import "./body.css";
 
 
@@ -11,3 +12,4 @@ body{
     color: #fff;
     font-family: 'Fira Sans', sans-serif;
 }
+

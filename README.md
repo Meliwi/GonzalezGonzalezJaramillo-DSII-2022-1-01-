@@ -1,6 +1,8 @@
-# Aprendizaje de Github en el curso DSII 2022.1-01“
+# Aprendizaje de Github en el curso DSII 2022.1-01
 
 ## Descripción:
+
+## Desarrolladores:
 
 ### Melissa González Nebrijo - 1832127
 
