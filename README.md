@@ -1,6 +1,6 @@
 # Aprendizaje de Github en el curso DSII 2022.1-01
 
-## Descripción:
+## Descripción: Página del proyecto de la asignatura Desarrollo II, llamada Méminic.
 
 ## Desarrolladores:
 
