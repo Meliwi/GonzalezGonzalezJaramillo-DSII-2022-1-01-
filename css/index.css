@@ -1,0 +1,13 @@
+@import "./body.css";
+
+
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+body{
+    background: #2b2b2b;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+}
