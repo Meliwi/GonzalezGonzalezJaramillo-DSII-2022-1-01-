@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <title>Document</title>
-    </head>
-    <body>
+<html lang="en"><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <Link rel="stylesheet" href="./css/index.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300&display=swap');
+    </style>
+    <title>Méminic</title>
+    <link rel="shortcut icon" href="./images/fav-icon.png">
+     <script
+      src="https://kit.fontawesome.com/e422a83da1.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+ <body>
+    <header class="header">
+        <input type="checkbox" id="check"></input>
+        <label for="check" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu">
+          <ul class="nav-menu">
+            <li class="description">
+              <a href="#" class="active">Descripción</a>
+            </li>
+            <li class="problem">
+              <a href="#">Problema</a>
+            </li>
+            <li class="solution">
+              <a href="#">Solución</a>
+            </li>
+            <li class="reportes">
+              <a href="#">Herramientas</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <h2 class="software-title">
+          MÉMINIC SIMPLE STORE MANAGER
+        </h2>
+        <section id="inventory">
+          <div class="inventory">
+            <div class="inventory-image">
+              <img src="./images/glenn-carstens-peters.jpg" alt="Computador">
+            </div>
+            <div class="inventory-description">
+              <p>
+                Gestiona facilmente el inventario de tu tienda y registra la contabilidad de forma más segura.
+                Accede a toda tu información desde cualquier dispositivo a través de tu navegador web.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="problem">
+          <div class="problem">
+            <div class="problem-image">
+              <img src="./images/manik-roy.jpg" alt="inventario"/>
+            </div>
+            <div class="problem-description">
+              <p>
+                La mayoría de las tiendas Colombianas pequeñas suelen llevar su inventario y
+                contabilidad de manera manual, lo que resulta ineficiente e inseguro, porque se
+                puede extraviar con facilidad en caso de estar en papel o de difícil lectura en caso de
+                ser un programa como Excel.
+              </p>
+            </div>
+
+          </div>
+        </section>
+        <section id="inventory">
+          <div class="inventory">
+            <div class="inventory-image">
+              <img src="./images/edho-pratama.jpg" alt="telefono movil"/>
+            </div>
+            <div class="solution-description">
+              <p>
+                Con Méminic puedes gestionar tu propio espacio de trabajo, adicionar empleados, productos que tienes
+                disponibles en tu tienda asi como llevar un registro de la cantidad de existencias disponibles. 
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="reports">
+          <div class="problem">
+            <div class="problem-image">
+              <img  src="./images/luke-chesser.jpg" alt="informes"/>
+            </div>
+            <div class="reports-description">
+              <p>
+                Lleva un registro organizado de tu contabilidad, con datos que se mantienen de forma segura en la nube. 
+                Además genera variedad de reportes que reflejen el desempeño de tu tienda en un periodo de tiempo determinado.
+              </p>
+            </div>
+          </div>
+        </section>
+    </div>
         <footer>
             <p>&#169; 2021 Méminic. All rights reserved.</p>
             <a href="index.html">Privacy Policy | </a>
             <a href="index.html">Terms of Use | </a>
             <a href="index.html">Accessibility</a>
         </footer>
-    </body>
+  </body>
 </html>
