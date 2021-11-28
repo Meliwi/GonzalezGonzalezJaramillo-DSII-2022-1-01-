@@ -1,0 +1,42 @@
+.wrapper {
+    max-inline-size: 1158px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    margin:auto;
+}
+
+.inventory, .problem{
+    display: flex;
+    align-items: center;
+    gap:32px;
+    padding-top: 20px;
+}
+.inventory:nth-of-type(odd) .inventory-image{
+    order:2;
+    flex:1;
+}
+
+.inventory-description{
+    flex:1;
+}
+
+.inventory-image img, .problem-image img{
+    height: 40vh;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width:768px){
+    .inventory, .problem{
+        flex-direction: column;
+    }
+    .inventory-image img, .problem-image img{
+        width: 60vw;
+        height: auto;
+    }
+    .inventory-description, .solution-description{
+        flex:2;
+        order:2;
+    }
+}
