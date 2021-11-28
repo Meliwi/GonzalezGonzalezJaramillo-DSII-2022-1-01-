@@ -1,42 +1,95 @@
 .wrapper {
-    max-inline-size: 1158px;
-    padding-inline-end: 16px;
-    padding-inline-start: 16px;
-    margin:auto;
+  max-inline-size: 1158px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
-.inventory, .problem{
-    display: flex;
-    align-items: center;
-    gap:32px;
-    padding-top: 20px;
-}
-.inventory:nth-of-type(odd) .inventory-image{
-    order:2;
-    flex:1;
+.software-title {
+  text-align: center;
 }
 
-.inventory-description{
-    flex:1;
+.inventory,
+.problem {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+}
+.inventory:nth-of-type(odd) .inventory-image {
+  order: 2;
+  flex: 1;
 }
 
-.inventory-image img, .problem-image img{
-    height: 40vh;
-    width: auto;
-    display: block;
-    margin: 0 auto;
+.inventory-image,
+.problem-image {
+  transition: transform 0.2s;
 }
 
-@media (max-width:768px){
-    .inventory, .problem{
-        flex-direction: column;
-    }
-    .inventory-image img, .problem-image img{
-        width: 60vw;
-        height: auto;
-    }
-    .inventory-description, .solution-description{
-        flex:2;
-        order:2;
-    }
+.inventory-image:hover,
+.problem-image:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.inventory,
+.problem {
+  background-color: #333;
+  border-radius: 20px;
+}
+#inventory,
+#problem,
+#solution {
+  padding-bottom: 20px;
+}
+.inventory-description {
+  flex: 1;
+}
+.problem-description,
+.inventory-description,
+.solution-description,
+.reports-description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.title {
+  background: tomato;
+  color: white;
+  font: tomato;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+  align-self: flex-start;
+  box-shadow: -4px 4px 0 white;
+  text-decoration: none;
+}
+
+.inventory-image img,
+.problem-image img {
+  height: 40vh;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .inventory,
+  .problem {
+    flex-direction: column;
+  }
+  .inventory-image img,
+  .problem-image img {
+    width: 60vw;
+    height: auto;
+  }
+  .inventory-description,
+  .solution-description {
+    flex: 2;
+    order: 2;
+  }
 }

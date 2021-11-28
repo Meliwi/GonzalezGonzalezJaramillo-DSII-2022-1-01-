@@ -8,11 +8,12 @@
       @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300&display=swap');
     </style>
     <title>Méminic</title>
-    <link rel="shortcut icon" href="./images/fav-icon.png">
+    
      <script
       src="https://kit.fontawesome.com/e422a83da1.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="./images/fav-icon.png">
 </head>
  <body>
     <header class="header">
@@ -22,17 +23,17 @@
         </label>
         <nav class="menu">
           <ul class="nav-menu">
-            <li class="description">
-              <a href="#" class="active">Descripción</a>
+            <li class="menu-description">
+              <a href="#inventory" ><b>Descripción</b></a>
             </li>
-            <li class="problem">
-              <a href="#">Problema</a>
+            <li class="menu-problem">
+              <a href="#problem"><b>Problema</b></a>
             </li>
-            <li class="solution">
-              <a href="#">Solución</a>
+            <li class="menu-solution">
+              <a href="#solution"><b>Solución</b></a>
             </li>
-            <li class="reportes">
-              <a href="#">Herramientas</a>
+            <li class="menu-reportes">
+              <a href="#reports"><b>Herramientas</b></a>
             </li>
           </ul>
         </nav>
@@ -41,12 +42,13 @@
         <h2 class="software-title">
           MÉMINIC SIMPLE STORE MANAGER
         </h2>
-        <section id="inventory">
+        <section aria-label="inventory" id="inventory">
           <div class="inventory">
             <div class="inventory-image">
               <img src="./images/glenn-carstens-peters.jpg" alt="Computador">
             </div>
             <div class="inventory-description">
+              <h2 class="title">Descripción</h2>
               <p>
                 Gestiona facilmente el inventario de tu tienda y registra la contabilidad de forma más segura.
                 Accede a toda tu información desde cualquier dispositivo a través de tu navegador web.
@@ -54,12 +56,13 @@
             </div>
           </div>
         </section>
-        <section id="problem">
+        <section aria-label="problem" id="problem">
           <div class="problem">
             <div class="problem-image">
               <img src="./images/manik-roy.jpg" alt="inventario"/>
             </div>
             <div class="problem-description">
+              <h2 class="title">Problema</h2>
               <p>
                 La mayoría de las tiendas Colombianas pequeñas suelen llevar su inventario y
                 contabilidad de manera manual, lo que resulta ineficiente e inseguro, porque se
@@ -70,12 +73,13 @@
 
           </div>
         </section>
-        <section id="inventory">
+        <section id="solution">
           <div class="inventory">
             <div class="inventory-image">
               <img src="./images/edho-pratama.jpg" alt="telefono movil"/>
             </div>
             <div class="solution-description">
+              <h2 class="title">Solución</h2>
               <p>
                 Con Méminic puedes gestionar tu propio espacio de trabajo, adicionar empleados, productos que tienes
                 disponibles en tu tienda asi como llevar un registro de la cantidad de existencias disponibles. 
@@ -83,15 +87,16 @@
             </div>
           </div>
         </section>
-        <section id="reports">
+        <section aria-label="reports" id="reports">
           <div class="problem">
             <div class="problem-image">
               <img  src="./images/luke-chesser.jpg" alt="informes"/>
             </div>
             <div class="reports-description">
+              <h2 class="title">Reportes</h2>
               <p>
                 Lleva un registro organizado de tu contabilidad, con datos que se mantienen de forma segura en la nube. 
-                Además genera variedad de reportes que reflejen el desempeño de tu tienda en un periodo de tiempo determinado.
+                Además, genera variedad de reportes que reflejen el desempeño de tu tienda en un periodo de tiempo determinado.
               </p>
             </div>
           </div>

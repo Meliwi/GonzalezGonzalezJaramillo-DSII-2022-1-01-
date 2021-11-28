@@ -1,8 +1,20 @@
+.header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
 header {
   width: 100%;
+  background-color: #3d3d3d;
 }
 #check {
   display: none;
+}
+
+label i {
+  padding: 10px;
 }
 
 .menu-btn {
@@ -28,7 +40,12 @@ header {
   display: block;
   padding: 20px;
   text-decoration: none;
-  color: black;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: #d73c15;
 }
 
 @media (max-width: 768px) {
@@ -40,6 +57,7 @@ header {
     width: 100%;
     margin-left: -100%;
     transition: all 0.5s;
+    background-color: #2b2b2b;
   }
   .menu ul {
     flex-direction: column;
